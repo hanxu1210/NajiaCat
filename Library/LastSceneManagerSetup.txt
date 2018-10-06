@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Swing-game-template/Scene/Game.unity
+- path: Assets/Swing-game-template/Scene/Menu.unity
   isLoaded: 1
   isActive: 1
