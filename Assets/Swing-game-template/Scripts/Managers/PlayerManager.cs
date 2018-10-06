@@ -113,7 +113,7 @@ public class PlayerManager : MonoBehaviour {
 		}
 
 		//get player input (mouse + touch + keyboard)
-		if(Input.GetKeyDown (KeyCode.JoystickButton0) || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
+		if(KeyboardHandler.IsOkButtonDown() || Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) {
 			isSwinging = true;
 			StartCoroutine(initSwing());
 		}

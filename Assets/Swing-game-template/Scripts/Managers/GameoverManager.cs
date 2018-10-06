@@ -52,7 +52,7 @@ public class GameoverManager : MonoBehaviour {
 	private RaycastHit hitInfo;
 	private Ray ray;
 	IEnumerator tapManager() {
-		if (Input.GetKeyDown (KeyCode.JoystickButton0))
+		if (KeyboardHandler.IsOkButtonDown())
 		{
 			playSfx(menuTap);										//play audioclip
 			saveScore();											//save players best and last score

@@ -46,7 +46,7 @@ public class MenuManager : MonoBehaviour {
 	private RaycastHit hitInfo;
 	private Ray ray;
 	IEnumerator tapManager (){
-		if (Input.GetKeyDown (KeyCode.JoystickButton0))
+		if (KeyboardHandler.IsOkButtonDown())
 		{
 			playSfx(tapSfx);							//play touch sound
 			//StartCoroutine(animateButton(objectHit));	//touch animation effect
